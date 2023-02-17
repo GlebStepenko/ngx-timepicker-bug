@@ -1,0 +1,16 @@
+<mat-dialog-content class="mat-typography" >
+  <mat-form-field>
+    <input matInput
+           [format]="24"
+           [ngxMatTimepicker]="pickerTimeEnd"
+           readonly />
+    <button mat-icon-button matSuffix  aria-label="icon time end"  >
+      <mat-icon>watch_later</mat-icon>
+    </button>
+    <ngx-mat-timepicker #pickerTimeEnd></ngx-mat-timepicker>
+  </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions class="container-error warm-color">
+</mat-dialog-actions>
+
