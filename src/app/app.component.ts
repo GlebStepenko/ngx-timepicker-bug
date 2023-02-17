@@ -12,14 +12,10 @@ export class AppComponent {
   constructor(private readonly _d: MatDialog) {
   }
 
-
   async openDialog() {
     const {DialogLazyModule} = await import( './dialog/dialog.lazy/dialog.lazy.module');
     this._d.open(DialogLazyModule.getDialog(), {
-      panelClass: 'dialog-close-big',
       data: {}
-    }).afterClosed().pipe(
-
-    ).subscribe();
+    }).afterClosed().subscribe();
   }
 }
